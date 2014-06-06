@@ -18,6 +18,8 @@
 	ersf[localfolder]="../ersf"
 	ersf[enable]=true
 
+	composer="C:\projects\composer.phar"
+	
 #repos
 	default_repo=${ip_repo}
 
