@@ -2,6 +2,8 @@
 
 source bin/settings.conf
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
+
 if [ -z $1 ]; then
 	echo "first argument must be repo"
 	exit 1
@@ -43,3 +45,5 @@ if [ ${ersf[enable]} ]; then
 	git push  $1 $2
 fi
 echo "ready"
+
+cd ${ROOT_PATH}

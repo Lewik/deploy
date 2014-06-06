@@ -2,6 +2,9 @@
 
 source bin/settings.conf
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
+
+
 echo "git status"
 if [ ${erzakaz[enable]} ]; then
 	echo "erzakaz"
@@ -33,3 +36,5 @@ if [ ${ersf[enable]} ]; then
 	git status
 fi
 echo "ready"
+
+cd ${ROOT_PATH}

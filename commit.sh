@@ -2,6 +2,8 @@
 
 source bin/settings.conf
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
+
 if [ -z $1 ]; then
 	echo "first argument must be comment"
 	exit 1
@@ -44,3 +46,5 @@ if [ ${ersf[enable]} ]; then
 	git commit -m  $1
 fi
 echo "ready"
+
+cd ${ROOT_PATH}

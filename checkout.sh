@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source bin/settings.conf
+ROOT_PATH=$(cd $(dirname $0) && pwd);
 
 if [ -z $1 ]; then
 	echo "first argument must be branch"
@@ -38,3 +39,7 @@ if [ ${ersf[enable]} ]; then
 	git checkout  $1
 fi
 echo "ready"
+
+
+
+cd ${ROOT_PATH}
