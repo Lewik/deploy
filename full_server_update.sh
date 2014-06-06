@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source bin/settings.conf
 
 if [ -z $1 ]; then
@@ -13,5 +12,8 @@ if [ -z $2 ]; then
 	exit 1
 fi
 
-
+source bin/apache_go_maintenance.sh
 source bin/pull.conf $1 $2
+source bin/php_update.sh
+source bin/chown.sh
+source bin/apache_go_work.sh

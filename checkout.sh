@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source settings.conf
+source bin/settings.conf
 
 if [ -z $1 ]; then
 	echo "first argument must be branch"

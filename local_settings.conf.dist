@@ -17,6 +17,8 @@
 
 	ersf[localfolder]="../ersf"
 	ersf[enable]=true
+	
+	eradmin[enable]=true
 
 	composer="C:\projects\composer.phar"
 	
