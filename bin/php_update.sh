@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
 if [ ${ersf[enable]} ]; then
 
 	echo "update"
@@ -52,3 +53,5 @@ if [ ${ersf[enable]} ]; then
 	
 	echo "ready"
 fi
+
+cd ${ROOT_PATH}

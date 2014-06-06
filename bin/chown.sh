@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
 echo "chown"
 if [ ${erzakaz[enable]} ]; then
 	echo "erzakaz"
@@ -26,5 +27,5 @@ if [ ${ersf[enable]} ]; then
 	cd ${ersf[localfolder]}
 	chown www-data:www-data -R *
 fi
-
+cd ${ROOT_PATH}
 echo "chown ok"

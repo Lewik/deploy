@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
 echo "git pull"
 if [ ${erzakaz[enable]} ]; then
 	echo "erzakaz"
@@ -31,3 +32,4 @@ if [ ${ersf[enable]} ]; then
 	git pull  $1 $2
 fi
 echo "ready"
+cd ${ROOT_PATH}
