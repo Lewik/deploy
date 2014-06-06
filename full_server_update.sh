@@ -13,7 +13,7 @@ if [ -z $2 ]; then
 fi
 
 source bin/apache_go_maintenance.sh
-source bin/pull.conf $1 $2
+source bin/pull.sh $1 $2
 source bin/php_update.sh
 source bin/chown.sh
 source bin/apache_go_work.sh

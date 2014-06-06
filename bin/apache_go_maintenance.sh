@@ -27,11 +27,6 @@ if [ ${eradmin[enable]} ]; then
 fi
 
 
-if [ ${ersf[enable]} ]; then
-	echo "ersf"
-	a2dissite ${ersf[site_server_name]}
-fi
-
 if [ ${onupdate[enable]} ]; then
 	echo "onupdate"
 	a2ensite ${onupdate[site_server_name]}

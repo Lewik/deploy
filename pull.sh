@@ -14,4 +14,4 @@ if [ -z $2 ]; then
 fi
 
 
-source bin/pull.conf $1 $2
+source bin/pull.sh $1 $2
