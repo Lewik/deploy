@@ -3,19 +3,19 @@
 
 #folders
 #better to use full path^ this path will be used in cd between repo folders
-	erzakaz[localfolder]="../erzakaz"
+	erzakaz[localfolder]="../erzakaz/"
 	erzakaz[enable]=true
 
-	erreestr[localfolder]="../erreestr"
+	erreestr[localfolder]="../erreestr/"
 	erreestr[enable]=true
 
-	ercommon[localfolder]="../ercommon"
+	ercommon[localfolder]="../ercommon/"
 	ercommon[enable]=true
 
-	erportal[localfolder]="../erportal"
+	erportal[localfolder]="../erportal/"
 	erportal[enable]=true
 
-	ersf[localfolder]="../ersf"
+	ersf[localfolder]="../ersf/"
 	ersf[enable]=true
 	
 	eradmin[enable]=true
