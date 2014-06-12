@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source bin/settings.conf
+source bin/settings.conf.sh
 
 ROOT_PATH=$(cd $(dirname $0) && pwd);
 

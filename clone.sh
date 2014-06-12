@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source bin/settings.conf
+source bin/settings.conf.sh
 
 echo "making dirs"
 if [ ${erzakaz[enable]} ]; then

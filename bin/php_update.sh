@@ -28,27 +28,27 @@ if [ ${ersf[enable]} ]; then
 	echo "install sf-assets to ct"
 	if [ ${erzakaz[enable]} ]; then
 		echo "erzakaz"
-		php app/console assets:install ${erzakaz[localfolder]}
+		php app/console assets:install ${erzakaz[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${erreestr[enable]} ]; then
 		echo "erreestr"
-		php app/console assets:install ${erreestr[localfolder]}
+		php app/console assets:install ${erreestr[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${ercommon[enable]} ]; then
 		echo "ercommon"
-		php app/console assets:install ${ercommon[localfolder]}
+		php app/console assets:install ${ercommon[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${erportal[enable]} ]; then
 		echo "erportal"
-		php app/console assets:install ${erportal[localfolder]}
+		php app/console assets:install ${erportal[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${ersf[enable]} ]; then
 		echo "ersf"
-		php app/console assets:install ${ersf[localfolder]}
+		php app/console assets:install
 	fi
 	
 	echo "ready"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-source bin/settings.conf
+source bin/settings.conf.sh
 
 if [ -z $1 ]; then
 	echo "first argument must be repo"
