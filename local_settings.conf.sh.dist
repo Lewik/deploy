@@ -44,8 +44,6 @@ srv_prod="/srv/Release/"
 
 #scp
 scp_folder="/srv/scp_download"
-scp_port=2222
-scp_url="piter@83.149.249.187:/home/piter/Yamal_rel/*.zip"
 
 #composer
 composer="/srv/composer.phar"

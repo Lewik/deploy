@@ -36,4 +36,10 @@ ersf[site_server_name]="ersf"
 
 bundles_folder="ctcommon/"
 
+
+scp_port=2222
+scp_address="83.149.249.187"
+scp_user="piter"
+scp_pattern="/home/piter/Yamal_rel/*.zip"
+
 source local_settings.conf.sh
