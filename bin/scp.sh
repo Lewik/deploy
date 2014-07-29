@@ -34,5 +34,7 @@ cp -av $FILE/* ${srv_prod}
 
 rm -rf ${scp_folder}
 
+echo "+%Y-%m-%d %H:%M:%S Downloaded "${ZIP} >> scp_log
+
 echo "ready"
 cd ${ROOT_PATH}
