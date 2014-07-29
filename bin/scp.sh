@@ -9,7 +9,7 @@ cd ${scp_folder}
 rm -rf *
 
 #скачиваем архив
-scp -P ${scp_port} ${scp_user}@${scp_ip}:${scp_pattern} ${scp_folder}
+scp -P ${scp_port} ${scp_user}@${scp_address}:${scp_pattern} ${scp_folder}
 
 #получить имя архива
 cd ${scp_folder}
