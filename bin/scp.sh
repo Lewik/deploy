@@ -22,8 +22,11 @@ done
 FILE=${ZIP%.*}
 
 #извлечение данных
+echo "Unzipping..."
 unzip -qx $ZIP
 rm -rf $FILE/ersf/vendor
+
+echo "Unzipping done!"
 
 echo "ready"
 cd ${ROOT_PATH}
