@@ -42,7 +42,7 @@ scp_address="83.149.249.187"
 scp_user="piter"
 scp_pattern="/home/piter/Yamal_rel/*.zip"
 
-log_dir="logs/"
+log_dir="/var/log/"
 scp_log=${log_dir}"scp_download.log"
 
 source local_settings.conf.sh
