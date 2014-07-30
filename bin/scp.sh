@@ -22,7 +22,7 @@ done
 FILE=${ZIP%.*}
 
 #извлечение данных
-unzip -x $ZIP
+unzip -qx $ZIP
 rm -rf $FILE/ersf/vendor
 
 echo "ready"
