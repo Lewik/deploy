@@ -23,20 +23,7 @@ FILE=${ZIP%.*}
 
 #извлечение данных
 unzip -x $ZIP
-
-#переместить в Debug & Release
 rm -rf $FILE/ersf/vendor
-
-mkdir -pv ${srv_debug}
-cp -av $FILE/* ${srv_debug}
-mkdir -pv ${srv_prod}
-cp -av $FILE/* ${srv_prod}
-
-rm -rf ${scp_folder}
-
-#логирование
-DATE=`date +%Y-%m-%d:%H:%M:%S`
-echo "$DATE Downloaded "${ZIP} >> ${scp_log}
 
 echo "ready"
 cd ${ROOT_PATH}
