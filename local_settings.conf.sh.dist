@@ -48,3 +48,5 @@ scp_folder="/srv/scp_download"
 #composer
 composer="/srv/composer.phar"
 
+#backup
+bckp_folder="/srv/backup/"
