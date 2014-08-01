@@ -20,11 +20,11 @@ FILE=${ZIP%.*}
 #переместить в Release
 
 if [ $1 = "release" ]; then
-	DIR = ${srv_prod}
+	DIR=${srv_prod}
 fi
 
 if [ $1 = "debug" ]; then
-    DIR = ${srv_debug}
+    DIR=${srv_debug}
 fi
 
 mkdir -pv $DIR
