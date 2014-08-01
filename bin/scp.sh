@@ -24,6 +24,7 @@ FILE=${ZIP%.*}
 #извлечение данных
 echo "Unzipping..."
 unzip -qx $ZIP
+mv $ZIP ${scp_archive}
 rm -rf $FILE/ersf/vendor
 
 echo "Unzipping done!"
