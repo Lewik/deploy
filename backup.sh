@@ -33,9 +33,11 @@ DATE=`date +%Y-%m-%d:%H:%M:%S`
 echo "$DATE $1 files backup " >> ${scp_log}
 
 #DB backup
-pg_dump -h 127.0.0.1 -U er er -WFc | zip > backup.sql.zip
+pg_dump -h 127.0.0.1 -U er er -WFc | zip > er.sql.zip
+echo "database er backup created"
 
-echo "DB backup created"
+pg_dump -h 127.0.0.1 -U er er_debug -WFc | zip > er_debug.sql.zip
+echo "database er_debug backup created"
 
 #логирование
 DATE=`date +%Y-%m-%d:%H:%M:%S`
