@@ -45,4 +45,9 @@ scp_pattern="/home/piter/Yamal_rel/*.zip"
 log_dir="/var/log/"
 scp_log=${log_dir}"scp_download.log"
 
+base_user="er"
+base_prod="er"
+base_debug="er_debug"
+pg_dump_path="pg_dump"
+
 source local_settings.conf.sh
