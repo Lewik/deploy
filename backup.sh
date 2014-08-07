@@ -2,7 +2,7 @@
 
 source ./bin/settings.conf.sh
 
-mkdir -pv ${bckp_folder}
+mkdir -p ${bckp_folder}
 cd ${bckp_folder}
 
 #удаление файлов больше 10

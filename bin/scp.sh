@@ -4,7 +4,7 @@ ROOT_PATH=$(cd $(dirname $0) && pwd);
 echo "Get via scp"
 
 echo "Prepare scp buffer folder"
-mkdir -pv ${scp_folder}
+mkdir -p ${scp_folder}
 cd ${scp_folder}
 rm -rf *
 
@@ -29,7 +29,7 @@ unzip -qx $ZIP
 echo "Unzipping done"
 
 echo "Moving $ZIP file to archive"
-mkdir -pv ${scp_archive}
+mkdir -p ${scp_archive}
 mv $ZIP ${scp_archive}
 
 echo "Preparing downloaded update"

@@ -25,7 +25,7 @@ echo "update name: $ZIP"
 
 echo "moving folder to $1"
 
-mkdir -pv $DIR
+mkdir -p $DIR
 cp -a $FILE/* $DIR
 
 

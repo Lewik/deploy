@@ -4,19 +4,19 @@ source bin/settings.conf.sh
 
 echo "making dirs"
 if [ ${erzakaz[enable]} ]; then
-	mkdir -p -v ${erzakaz[localfolder]}
+	mkdir -p ${erzakaz[localfolder]}
 fi
 if [ ${erreestr[enable]} ]; then
-	mkdir -p -v ${erreestr[localfolder]}
+	mkdir -p ${erreestr[localfolder]}
 fi
 if [ ${ercommon[enable]} ]; then
-	mkdir -p -v ${ercommon[localfolder]}
+	mkdir -p ${ercommon[localfolder]}
 fi
 if [ ${erportal[enable]} ]; then
-	mkdir -p -v ${erportal[localfolder]}
+	mkdir -p ${erportal[localfolder]}
 fi
 if [ ${ersf[enable]} ]; then
-	mkdir -p -v ${ersf[localfolder]}
+	mkdir -p ${ersf[localfolder]}
 fi
 echo "dirs ready"
 

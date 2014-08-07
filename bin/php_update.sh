@@ -52,25 +52,25 @@ if [ ${ersf[enable]} ]; then
 	echo "install sf-assets to ct"
 	if [ ${erzakaz[enable]} ]; then
 		echo "erzakaz"
-		mkdir -p -v ${erzakaz[localfolder]}${bundles_folder}
+		mkdir -p ${erzakaz[localfolder]}${bundles_folder}
 		php app/console assets:install ${erzakaz[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${erreestr[enable]} ]; then
 		echo "erreestr"
-		mkdir -p -v ${erreestr[localfolder]}${bundles_folder}
+		mkdir -p ${erreestr[localfolder]}${bundles_folder}
 		php app/console assets:install ${erreestr[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${ercommon[enable]} ]; then
 		echo "ercommon"
-		mkdir -p -v ${ercommon[localfolder]}${bundles_folder}
+		mkdir -p ${ercommon[localfolder]}${bundles_folder}
 		php app/console assets:install ${ercommon[localfolder]}${bundles_folder}
 	fi
 
 	if [ ${erportal[enable]} ]; then
 		echo "erportal"
-		mkdir -p -v ${erportal[localfolder]}${bundles_folder}
+		mkdir -p ${erportal[localfolder]}${bundles_folder}
 		php app/console assets:install ${erportal[localfolder]}${bundles_folder}
 	fi
 
