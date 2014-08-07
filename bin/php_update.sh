@@ -1,5 +1,26 @@
 #!/bin/bash
 
+if [ -z $1 ]; then
+	echo "first argument must be release or debug"
+	exit 1
+elif [ $1 = "release" ]; then
+	DIR=${srv_prod}
+elif [ $1 = "debug" ]; then
+    DIR=${srv_debug}
+else
+    echo "first argument must be release or debug"
+    exit 1
+fi
+
+#change path to repos
+
+ersf[localfolder]=${DIR}${ersf[localfolder]}
+erzakaz[localfolder]=${DIR}${erzakaz[localfolder]}
+erreestr[localfolder]=${DIR}${erreestr[localfolder]}
+ercommon[localfolder]=${DIR}${ercommon[localfolder]}
+erportal[localfolder]=${DIR}${erportal[localfolder]}
+
+
 ROOT_PATH=$(cd $(dirname $0) && pwd);
 if [ ${ersf[enable]} ]; then
 

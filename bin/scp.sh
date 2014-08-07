@@ -28,5 +28,10 @@ mv $ZIP ${scp_archive}
 rm -rf $FILE/ersf/vendor
 echo "Unzipping done!"
 
+#сохранение в архив
+mkdir -pv ${scp_archive}
+mv $ZIP ${scp_archive}
+echo "$ZIP file moved to archive"
+
 echo "ready"
 cd ${ROOT_PATH}
