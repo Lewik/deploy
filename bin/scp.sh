@@ -1,17 +1,17 @@
 #!/bin/bash
 
 ROOT_PATH=$(cd $(dirname $0) && pwd);
-echo "get via scp"
+echo "Get via scp"
 
-#scp buffer folder
+echo "Prepare scp buffer folder"
 mkdir -pv ${scp_folder}
 cd ${scp_folder}
 rm -rf *
 
-#download zip-archive
+echo "Download zip-archive"
 scp -P ${scp_port} ${scp_user}@${scp_address}:${scp_pattern} ${scp_folder}
 
-#zip-archiwve name
+
 cd ${scp_folder}
 
 for file in ./*; do
@@ -21,17 +21,20 @@ done
 
 FILE=${ZIP%.*}
 
+echo "Zip name: ${ZIP}"
+
 
 echo "Unzipping..."
 unzip -qx $ZIP
-mv $ZIP ${scp_archive}
-rm -rf $FILE/ersf/vendor
-echo "Unzipping done!"
+echo "Unzipping done"
 
-#сохранение в архив
+echo "Moving $ZIP file to archive"
 mkdir -pv ${scp_archive}
 mv $ZIP ${scp_archive}
-echo "$ZIP file moved to archive"
+
+echo "Preparing downloaded update"
+rm -rf $FILE/ersf/vendor
+chown -R web_server_user:web_server_group $FILE
 
 echo "ready"
 cd ${ROOT_PATH}

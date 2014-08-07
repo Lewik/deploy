@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#common
+web_server_user="nginx"
+web_server_group="nginx"
 
 #folders
 srv_debug="/srv/Debug/"
