@@ -30,4 +30,7 @@ cp -a $FILE/* $DIR
 
 DATE=`date +%Y-%m-%d:%H:%M:%S`
 echo "$DATE $1 updated " >> ${scp_log}
+
+cd ${ROOT_PATH}
+
 echo "ready"
