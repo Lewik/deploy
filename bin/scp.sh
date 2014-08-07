@@ -34,7 +34,7 @@ mv $ZIP ${scp_archive}
 
 echo "Preparing downloaded update"
 rm -rf $FILE/ersf/vendor
-chown -R web_server_user:web_server_group $FILE
+chown -R $web_server_user:$web_server_group $FILE
 
 echo "ready"
 cd ${ROOT_PATH}
