@@ -7,7 +7,7 @@ if [ -z $1 ]; then
 	exit 1
 fi
 
-#получить имя архива
+#get folder name
 cd ${scp_folder}
 
 for file in ./*; do
