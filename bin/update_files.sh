@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ROOT_PATH=$(cd $(dirname $0) && pwd);
+
 if [ -z $1 ]; then
 	echo "first argument must be release or debug"
 	exit 1
