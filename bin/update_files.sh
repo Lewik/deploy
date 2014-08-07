@@ -23,8 +23,7 @@ FILE=${ZIP%.*}
 echo "update name: $ZIP"
 
 
-echo "moving folder to $1"
-
+echo "copying update to $1"
 mkdir -p $DIR
 cp -a $FILE/* $DIR
 
