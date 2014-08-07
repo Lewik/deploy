@@ -36,7 +36,8 @@ if [ ${ersf[enable]} ]; then
 	echo "sf cache warmup"
 	php app/console cache:warmup
 
-	#database update
+
+	echo "database update"
 	echo "apply ct-patch"
 	php app/console ip:db:import-file -p
 	echo "sf-migrations"
@@ -45,6 +46,8 @@ if [ ${ersf[enable]} ]; then
 	php app/console ip:db:schema-update
 	echo "sf fixtures"
 	php app/console doctrine:fixtures:load --append
+
+
 
 	echo "install sf-assets to ct"
 	if [ ${erzakaz[enable]} ]; then

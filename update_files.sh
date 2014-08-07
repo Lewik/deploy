@@ -14,11 +14,11 @@ for file in ./*; do
   ZIP=${file##*/}
   break
 done
-
 FILE=${ZIP%.*}
+echo "update name: $ZIP"
 
-#переместить в Release
 
+echo "moving folder to $1"
 if [ $1 = "release" ]; then
 	DIR=${srv_prod}
 fi
@@ -30,6 +30,7 @@ fi
 mkdir -pv $DIR
 cp -a $FILE/* $DIR
 
-#логирование
+
 DATE=`date +%Y-%m-%d:%H:%M:%S`
 echo "$DATE $1 updated " >> ${scp_log}
+echo "ready"
